@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> عمل الحاسب</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4a4a4a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>  الرئيسية </h1>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>الصفحة الأولى</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #4a4a4a;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>الصفحة الأولى</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f0f0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        a {
+            color: #4a4a4a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #333;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">القائمة 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="hgghtjer.html">تسجيل دخول</a>
+          <a href="hharah.html">Chats</a>
+          <a href="hgyg.html">معلومات</a>
+        </div>
+      </div> 
+    </div>
+</body>
+</html>
+
+<body>
+<ul>
+    <li><p><a href="hgghtjer.html">تسجيل دخول</a></p></li>
+    <li><p><a href="hharah.html">Chats</a></p></li>
+    <li><p><a href="hgyg.html">معلومات</a></p></li>
+</ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f0f0;
+        }
+        h2 {
+            color: #4a4a4a;
+        }
+        textarea, button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4a4a4a;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        #comments {
+            margin-top: 20px;
+        }
+        #comments div {
+            background-color: #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>أضف تعليق:</h2>
+    <textarea id="comment" rows="4"></textarea>
+    <button onclick="addComment()">أضف</button>
+    <h2>التعليقات:</h2>
+    <div id="comments"></div>
+    <script>
+    function addComment() {
+      var comment = document.getElementById("comment").value;
+      var comments = document.getElementById("comments");
+      var commentDiv = document.createElement("div");
+      commentDiv.textContent = comment;
+      comments.appendChild(commentDiv);
+    }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: 'Tajawal', sans-serif;
+        }
+        /* إذا كان عرض الشاشة أقل من 600 بكسل، ضبط لون الخلفية إلى اللون الوردي */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: pink;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="https://harmash.com/tutorials/html/images/html-5-icon.PNG"> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
